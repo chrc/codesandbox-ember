@@ -1,0 +1,24 @@
+<h1>{{t 'foo'}}</h1>
+<br>
+<h2>Ceci est un essai d'utilisation d'Ember-Intl, avec le mode Selection.</h2>
+cf. https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-ember-app-with-ember-intl
+<hr>
+<ul>
+  <li><button {{on 'click' (fn this.changeLocale 'en-us')}}>en-us</button></li>
+  <li><button {{on 'click' (fn this.changeLocale 'fr-fr')}}>fr-fr</button></li>
+</ul>
+<hr>
+<ul>
+  <li>
+    <label>TYPE = pro</label>
+    <p>{{t "download" name="BabelEdit" type="pro"}}</p>
+  </li>
+  <li>
+    <label>TYPE = trial</label>
+    <p>{{t "download" name="BabelEdit" type="trial"}}</p>
+  </li>
+  <li>
+    <label>TYPE = N/A</label>
+    <p>{{t "download" name="BabelEdit" type=""}}</p>
+  </li>
+</ul>

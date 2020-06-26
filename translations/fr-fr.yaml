@@ -1,0 +1,7 @@
+foo: 'Bonjour le monde !'
+download: |-
+  Télécharger {type, select,
+      pro { {name} (full version) }
+      trial { la version d'essai de {name} }
+      other { {name} }
+  } depuis notre site web !
